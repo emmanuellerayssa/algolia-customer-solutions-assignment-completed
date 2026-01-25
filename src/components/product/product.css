@@ -1,0 +1,45 @@
+.product__page {
+    min-height: 100vh;         
+    display: flex;
+    justify-content: center;    
+    align-items: center;        
+    padding: 2rem;   
+    gap: 50px           
+}
+
+
+.product {
+    display: flex;
+    gap: 50px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 2rem;
+    max-width: 900px;
+    width: 100%;
+    align-items: center;
+}
+
+.product__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 500px;
+}
+
+.product__image img {
+    height: 400px;
+    width: auto;
+}
+
+.product__price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.product__rating span {
+  color: gold;
+  font-size: larger;
+}
+
+
