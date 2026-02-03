@@ -163,8 +163,7 @@ if __name__ == "__main__":
     #  start the data transformation chain
     data =  read_json(file_path)
     products_from_category, products_other_category = split_by_category(data, category)
-    products_new_price = compute_new_price(products_from_category, discount_factor)
-    new_catalog = create_new_catalog(products_new_price, products_other_category, discount_factor)
+    new_catalog = create_new_catalog(products_from_category, products_other_category, discount_factor)
     
     # Connect and authenticate with your Algolia app using your app ID and write API key
     _client = SearchClientSync(app_id, api_key)
@@ -177,4 +176,5 @@ if __name__ == "__main__":
     )
     
     #Success message
+
     print("Data has been successfully saved in the Algolia index 'products_on_sale'.")
