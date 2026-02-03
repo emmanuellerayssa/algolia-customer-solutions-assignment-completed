@@ -15,7 +15,7 @@ def read_json(json_path):
     """
     Reads a json file.
     Args:
-        json_path (str): The absolute path where to the data.
+        json_path (str): The absolute path to the data.
     Returns:
         data (dict): The data extracted from the json file
     Raises:
@@ -178,3 +178,4 @@ if __name__ == "__main__":
     #Success message
 
     print("Data has been successfully saved in the Algolia index 'products_on_sale'.")
+
